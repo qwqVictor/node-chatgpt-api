@@ -47,7 +47,7 @@ export default class ChatGPTBrowserClient {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${this.accessToken}`,
+                Authorization: `Bearer ${await this.accessToken()}`,
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
                 Cookie: this.cookies || undefined,
             },
@@ -188,7 +188,7 @@ export default class ChatGPTBrowserClient {
                     headers: {
                         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
                         'Content-Type': 'application/json',
-                        Authorization: `Bearer ${this.accessToken}`,
+                        Authorization: `Bearer ${await this.accessToken()}`,
                         Cookie: this.cookies || undefined,
                     },
                     body: '{"is_visible":false}',
@@ -288,7 +288,7 @@ export default class ChatGPTBrowserClient {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${this.accessToken}`,
+                Authorization: `Bearer ${await this.accessToken()}`,
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
                 Cookie: this.cookies || undefined,
             },
