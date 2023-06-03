@@ -44,6 +44,11 @@ export default {
         userToken: '',
         // If the above doesn't work, provide all your cookies as a string instead
         cookies: '',
+        modelOptions: {
+            // You can override the tone style here.
+            // available values: balanced, creative, precise, fast
+            toneStyle: 'creative',
+        },
         // A proxy string like "http://<ip>:<port>"
         proxy: '',
         // (Optional) Set 'x-forwarded-for' for the request. You can use a fixed IPv4 address or specify a range using CIDR notation,
