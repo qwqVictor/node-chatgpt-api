@@ -47,7 +47,7 @@ export default {
         modelOptions: {
             // You can override the tone style here.
             // available values: balanced, creative, precise, fast
-            toneStyle: 'creative',
+            toneStyle: 'balanced',
         },
         // A proxy string like "http://<ip>:<port>"
         proxy: '',
